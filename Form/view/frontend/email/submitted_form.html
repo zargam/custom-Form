@@ -1,0 +1,49 @@
+<!--@subject {{trans "International Enquiry Form "}} @-->
+<!--@vars {
+"var data.comment":"Comment",
+"var data.email":"Sender Email",
+"var data.name":"Sender Name",
+"var data.telephone":"Sender Telephone",
+"var data.attachment":"Sender Attachment"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+    <tr>
+        <td><strong>{{trans "First Name"}}</strong></td>
+        <td>{{var data.first_name}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Last Name"}}</strong></td>
+        <td>{{var data.last_name}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Email"}}</strong></td>
+        <td>{{var data.email}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Phone"}}</strong></td>
+        <td>{{var data.phone_no}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Comapany Name"}}</strong></td>
+        <td>{{var data.company_name}}</td>
+    </tr>
+    
+    <tr>
+        <td><strong>{{trans "Country"}}</strong></td>
+        <td>{{var data.country}}</td>
+    </tr>
+	<tr>
+        <td><strong>{{trans "Country"}}</strong></td>
+        <td>{{var data.country}}</td>
+    </tr>
+	<tr>
+        <td><strong>{{trans "Country"}}</strong></td>
+        <td>{{var data.company_legal_certification_name}}</td>
+    </tr>
+	
+</table>
+{{template config_path="design/email/footer_template"}}
